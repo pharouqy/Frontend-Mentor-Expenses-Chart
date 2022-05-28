@@ -8,7 +8,7 @@
 body {
   max-width: 1440px;
   background-color: hsl(27, 66%, 92%);
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,7 +115,6 @@ div.chart-single:nth-child(1)>.chart {
   justify-content: center;
   background-color: hsl(10, 79%, 65%);
   border-radius: 5px;
-  position: relative;
 }
 
 div.chart-single:nth-child(2)>.chart {
@@ -137,7 +136,6 @@ div.chart-single:nth-child(3)>.chart {
   justify-content: center;
   background-color: hsl(186, 34%, 60%);
   border-radius: 5px;
-  position: relative;
 }
 
 div.chart-single:nth-child(4)>.chart {
@@ -148,7 +146,6 @@ div.chart-single:nth-child(4)>.chart {
   justify-content: center;
   background-color: hsl(10, 79%, 65%);
   border-radius: 5px;
-  position: relative;
 }
 
 div.chart-single:nth-child(5)>.chart {
@@ -159,7 +156,6 @@ div.chart-single:nth-child(5)>.chart {
   justify-content: center;
   background-color: hsl(10, 79%, 65%);
   border-radius: 5px;
-  position: relative;
 }
 
 div.chart-single:nth-child(6)>.chart {
@@ -170,7 +166,6 @@ div.chart-single:nth-child(6)>.chart {
   justify-content: center;
   background-color: hsl(10, 79%, 65%);
   border-radius: 5px;
-  position: relative;
 }
 
 div.chart-single:nth-child(7)>.chart {
@@ -181,7 +176,6 @@ div.chart-single:nth-child(7)>.chart {
   justify-content: center;
   background-color: hsl(10, 79%, 65%);
   border-radius: 5px;
-  position: relative;
 }
 
 div.chart-single:nth-child(7)>.chart:hover .chart::after {
@@ -203,6 +197,9 @@ div.title {
   padding: 6px;
   margin-bottom: 10px;
   display: none;
+  position: absolute;
+  top: -30px;
+  right: -5px;
 }
 
 #bottom div h3 {
@@ -210,7 +207,8 @@ div.title {
   font-weight: 400;
   color: hsl(0, 0%, 63%);
 }
-#bottom div h3 + span {
+
+#bottom div h3+span {
   font-size: 2rem;
   font-weight: 700;
   color: hsl(0, 71%, 12%);
@@ -230,6 +228,10 @@ div.title {
   margin: 0;
 }
 
-#bottom > div:nth-child(2) {
+#bottom>div:nth-child(2) {
   margin-top: 50px;
+}
+
+div.chart-single {
+  position: relative;
 }
