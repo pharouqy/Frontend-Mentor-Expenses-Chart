@@ -15,6 +15,13 @@ body {
   justify-content: center;
 }
 
+@media all and (max-width: 375px) {
+  body {
+    width: auto;
+    align-items: unset;
+  }
+}
+
 section {
   width: 25%;
   height: 250px;
@@ -22,6 +29,7 @@ section {
 
 article {
   height: 100%;
+  min-width: 350px;
 }
 
 article>div:nth-child(1) {
