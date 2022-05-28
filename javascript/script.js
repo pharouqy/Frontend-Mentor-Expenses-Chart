@@ -14,7 +14,7 @@ for (let i = 0; i < charts.length; i++) {
 
 data();
 function data() {
-	fetch('../data.json')
+	fetch('https://pharouqy.github.io/Frontend-Mentor-Expenses-Chart/data.json')
 		.then(response => response.json())
 		.then(data => {
 			let titles = document.getElementsByClassName('title');
