@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap');
+
+* {
+  font-size: 18px;
+  font-family: 'DM Sans', 'Roboto', sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  background-color: hsl(27, 66%, 92%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 25%;
+  height: 250px;
+}
+
+article {
+  height: 100%;
+}
+
+article>div:nth-child(1) {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 15px;
+  padding: 0px 20px;
+  margin-bottom: 25px;
+}
+
+div>div>span {
+  display: block;
+}
+
+#logo {
+  display: block;
+  background-image: url(../images/logo.svg);
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 48px;
+  width: 72px;
+}
+
+h1 {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: hsl(27, 66%, 92%);
+  margin-bottom: 10px;
+  margin-top: auto;
+}
+
+h1+span {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(27, 66%, 92%);
+}
+
+article>div:nth-child(2) {
+  background-color: hsl(0, 0%, 97%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+div>h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+
+.chart-single {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+#chart-barre {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.chart-single:nth-child(1)>.chart {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  position: relative;
+}
+
+div.chart-single:nth-child(2)>.chart {
+  width: 40px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  position: relative;
+}
+
+div.chart-single:nth-child(3)>.chart {
+  width: 40px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(186, 34%, 60%);
+  border-radius: 5px;
+  position: relative;
+}
+
+div.chart-single:nth-child(4)>.chart {
+  width: 40px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  position: relative;
+}
+
+div.chart-single:nth-child(5)>.chart {
+  width: 40px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  position: relative;
+}
+
+div.chart-single:nth-child(6)>.chart {
+  width: 40px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  position: relative;
+}
+
+div.chart-single:nth-child(7)>.chart {
+  width: 40px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  position: relative;
+}
+
+div.chart-single:nth-child(7)>.chart:hover .chart::after {
+  display: block;
+}
+
+.active {
+  background-color: #e9b2a7 !important;
+}
+
+div.title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  width: 38px;
+  height: 15px;
+  background-color: black;
+  border-radius: 5px;
+  padding: 6px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+#bottom div h3 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 63%);
+}
+#bottom div h3 + span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(0, 71%, 12%);
+}
+
+#bottom div:nth-child(2) span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsl(0, 71%, 12%);
+  text-align: right;
+}
+
+#bottom div:nth-child(2) h4 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 63%);
+  margin: 0;
+}
+
+#bottom > div:nth-child(2) {
+  margin-top: 50px;
+}

@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<script src="./javascript/script.js" defer></script>
+		<title>Frontend Mentor | Expenses chart component</title>
+	</head>
+	<body>
+		<section>
+			<article>
+				<div>
+					<div>
+						<h1>My Balance</h1>
+						<span>$921.48</span>
+					</div>
+					<span id="logo"></span>
+				</div>
+				<div>
+					<div>
+						<h2>Spending - Last 7 days</h2>
+						<div id="chart-barre">
+							<div class="chart-single">
+								<div class="title">$25.35</div>
+								<div class="chart"></div>
+								<span>mon</span>
+							</div>
+							<div class="chart-single">
+								<div class="title">$25.35</div>
+								<div class="chart"></div>
+								<span>tue</span>
+							</div>
+							<div class="chart-single">
+								<div class="title">$25.35</div>
+								<div class="chart"></div>
+								<span>wed</span>
+							</div>
+							<div class="chart-single">
+								<div class="title">$25.35</div>
+								<div class="chart"></div>
+								<span>thu</span>
+							</div>
+							<div class="chart-single">
+								<div class="title">$25.35</div>
+								<div class="chart"></div>
+								<span>fri</span>
+							</div>
+							<div class="chart-single">
+								<div class="title">$25.35</div>
+								<div class="chart"></div>
+								<span>sat</span>
+							</div>
+							<div class="chart-single">
+								<div class="title">$25.35</div>
+								<div class="chart"></div>
+								<span>sun</span>
+							</div>
+						</div>
+						<hr />
+					</div>
+					<div id="bottom">
+						<div>
+							<h3>Total this month</h3>
+							<span>$478.33</span>
+						</div>
+						<div>
+							<span>+2.4%</span>
+							<h4>from last month</h4>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</body>
 </html>
