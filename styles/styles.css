@@ -191,13 +191,13 @@ div.chart-single:nth-child(7)>.chart:hover .chart::after {
 }
 
 .active {
-  background-color: #e9b2a7 !important;
+  filter: brightness(1.2);
 }
 
 div.title {
   font-size: 0.7rem;
   font-weight: 700;
-  color: hsl(0, 0%, 100%);
+  color: #fff;
   width: 38px;
   height: 15px;
   background-color: black;
